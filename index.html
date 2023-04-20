@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jarvis</title>
+</head>
+<body>
+    <!----audio elements----->
+    <audio id="clicksound">
+        <source src="./audio/jarvis_connected.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="clickoffsound">
+        <source src="./audio/jarvis_disconnected.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="whoareyou">
+        <source src="./audio/i_am_jarvis.mp3" type="audio/mpeg">
+    </audio>
+    <!--------->
+    <h1>jarvis by vishak kr</h1>
+    <button onclick="playAudio()" id="start">mic start</button>
+    <button onclick="playAudio2()" id="stop">mic stop</button>
+    <button id="speakOut">speakout</button>
+    <h1 id="time"></h1>
+</body>
+<script src="jarvisbrain.js"></script>
+</html>
